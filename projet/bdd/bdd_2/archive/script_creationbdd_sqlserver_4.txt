@@ -1,0 +1,109 @@
+USE main_db_2;
+
+CREATE TABLE Customer(
+        id_customer Int  identity  NOT NULL ,
+        firstname   Varchar (50) NOT NULL ,
+        lastname    Varchar (50) NOT NULL ,
+        birthdate   Date NOT NULL
+	,CONSTRAINT Customer_PK PRIMARY KEY (id_customer)
+);
+
+CREATE TABLE Adress(
+        id_adress      Int  identity  NOT NULL ,
+        postal_code    Varchar (5) NOT NULL ,
+        city           Varchar (50) NOT NULL ,
+        street_name    Varchar (50) NOT NULL ,
+        street_number  Varchar (5) NOT NULL ,
+        residence_name Varchar (50) ,
+        building_name  Varchar (10) ,
+        floor_number   Varchar (5)
+	,CONSTRAINT Adress_PK PRIMARY KEY (id_adress)
+);
+CREATE TABLE Employee(
+        id_employee Int  identity  NOT NULL ,
+        firstname   Varchar (50) NOT NULL ,
+        lastname    Varchar (50) NOT NULL ,
+        hiring_date Date NOT NULL ,
+        id_superior Int ,
+        id_adress   Int NOT NULL
+	,CONSTRAINT Employee_PK PRIMARY KEY (id_employee)
+
+	,CONSTRAINT Employee_Adress_FK FOREIGN KEY (id_adress) REFERENCES Adress(id_adress)
+);
+
+CREATE TABLE Ordered(
+        id_order           Int  identity  NOT NULL ,
+        reference          Varchar (50) NOT NULL ,
+        datedelivery      Date NOT NULL ,
+        dateinssuance     Date NOT NULL ,
+        datesettlement    Date NOT NULL ,
+        settlementbalance Float NOT NULL ,
+        fullprice          Float NOT NULL ,
+        id_customer        Int NOT NULL
+	,CONSTRAINT Ordered_PK PRIMARY KEY (id_order)
+
+	,CONSTRAINT Ordered_Customer_FK FOREIGN KEY (id_customer) REFERENCES Customer(id_customer)
+);
+CREATE TABLE Payment(
+        id_payment     Int  identity  NOT NULL ,
+        date_payment   Date NOT NULL ,
+        mean_payment   Varchar (50) NOT NULL ,
+        amount_payment Float NOT NULL ,
+        id_order       Int NOT NULL
+	,CONSTRAINT Payment_PK PRIMARY KEY (id_payment)
+
+	,CONSTRAINT Payment_Ordered_FK FOREIGN KEY (id_order) REFERENCES Ordered(id_order)
+);
+CREATE TABLE Item(
+        id_item          Int  identity  NOT NULL ,
+        reference        Varchar (50) NOT NULL ,
+        name             Varchar (50) NOT NULL ,
+        amount           Int NOT NULL ,
+        price_excl_taxes Float NOT NULL ,
+        vat              Float NOT NULL ,
+        reduction        Float
+	,CONSTRAINT Item_PK PRIMARY KEY (id_item)
+);
+
+CREATE TABLE Stock(
+        id_stock          Int  identity  NOT NULL ,
+        amount            Int NOT NULL ,
+        reorder_threshold Int NOT NULL ,
+        id_item           Int NOT NULL
+	,CONSTRAINT Stock_PK PRIMARY KEY (id_stock)
+
+	,CONSTRAINT Stock_Item_FK FOREIGN KEY (id_item) REFERENCES Item(id_item)
+	,CONSTRAINT Stock_Item_AK UNIQUE (id_item)
+);
+
+CREATE TABLE Wholesale_price(
+        id_reduc              Int  identity  NOT NULL ,
+        item_amount      Int NOT NULL ,
+        price_excl_taxes Float NOT NULL
+	,CONSTRAINT Wholesale_price_PK PRIMARY KEY (id_reduc)
+);
+CREATE TABLE Has(
+        id_adress   Int NOT NULL ,
+        id_customer Int NOT NULL ,
+        delivery    BIT NOT NULL ,
+        billing     BIT NOT NULL
+	,CONSTRAINT Has_PK PRIMARY KEY (id_adress,id_customer)
+
+	,CONSTRAINT Has_Adress_FK FOREIGN KEY (id_adress) REFERENCES Adress(id_adress)
+	,CONSTRAINT Has_Customer0_FK FOREIGN KEY (id_customer) REFERENCES Customer(id_customer)
+);
+
+CREATE TABLE Hold(	
+        id_order  Int NOT NULL ,
+        id_item   Int NOT NULL ,
+        id_reduc        Int NOT NULL ,
+        Quantity  Int NOT NULL ,
+        Sellprice Float NOT NULL ,
+        Vat       Float NOT NULL
+	,CONSTRAINT Hold_PK PRIMARY KEY (id_order,id_item,id_reduc)
+
+	,CONSTRAINT Hold_Ordered_FK FOREIGN KEY (id_order) REFERENCES Ordered(id_order)
+	,CONSTRAINT Hold_Item0_FK FOREIGN KEY (id_item) REFERENCES Item(id_item)
+	,CONSTRAINT Hold_Wholesale_price1_FK FOREIGN KEY (id_reduc) REFERENCES Wholesale_price(id_reduc)
+);
+

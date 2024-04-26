@@ -1,0 +1,25 @@
+INSERT INTO Employee (firstname, lastname , hiringdate , id_adress) 
+VALUES 
+('Hugo', 'Laplace', '2002-05-30', 1);
+
+
+INSERT INTO Employee (firstname, lastname , hiringdate , id_adress, id_superior) 
+VALUES
+('Estines', 'Matthieu', '2002-05-30', 2, 1),
+('Mathilde', 'Noël', '2002-08-21', 3, 3),
+('Martin', 'Grolhier','2002-04-08',3, 5),
+('Lucie', 'Barbalat','1989-11-13',4 ,4),
+('Manon', 'Gavois','2014-11-15',5,4),
+('Florian', 'Brochot','1938-03-13',5,5),
+('Emilie', 'Bardey','2007-04-30',6,6),
+('Léon',	'De Fonrocque','1972-01-14',7,7),
+('Alexandre',	'Deit','1942-05-17',8,7),
+('Pierre','Courrie', '2014-05-14',9,7),
+('Tanguy','Tard','2019-01-12',10,7),
+('Lucas','Giraux','2015-02-25',11,7),
+('Arthur','Bellouin','2018-06-17',12,7),
+('Emile','Boulanger','2016-03-24',13,7),
+('Tristan','Boyer','2015-04-07',14,7),
+('Théa','Chaya','2016-09-16',15,7),
+('Paul','Raison','2017-10-08',16,7);
+

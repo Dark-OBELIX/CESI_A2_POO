@@ -1,0 +1,17 @@
+USE main_db;
+
+DECLARE @VAR_ID INT;
+DECLARE @VAR_1 INT;
+DECLARE @VAR_2 INT;
+
+Set @VAR_ID = 1;
+
+SELECT @VAR_1 = amount
+from Stock
+where id_stock = @VAR_ID ;
+
+SELECT  @VAR_2 = price_excl_taxes
+from Item
+where id_stock =  @VAR_ID ;
+
+Select @VAR_1 * @VAR_2;

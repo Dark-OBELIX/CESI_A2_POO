@@ -1,0 +1,2 @@
+C:\Users\hugol\OneDrive\Documents\CESI_2\POO\prosit_6\workshop\AppUserManager\AppUserManager\x64\Debug\AppUserManager.vcxproj.AssemblyReference.cache
+C:\Users\hugol\OneDrive\Documents\CESI_2\POO\prosit_6\workshop\AppUserManager\AppUserManager\x64\Debug\AppUserManager.vcxproj.SuggestedBindingRedirects.cache

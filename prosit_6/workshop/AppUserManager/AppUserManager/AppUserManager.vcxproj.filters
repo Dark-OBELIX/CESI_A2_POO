@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Fichiers sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Fichiers de ressources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Fichiers sources\Data">
+      <UniqueIdentifier>{c45a67c9-16e5-40ac-ae0b-63b917d3bc3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Data\DAO">
+      <UniqueIdentifier>{ad3569da-f3ad-43b2-b639-a731f96110d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Services">
+      <UniqueIdentifier>{4d6ab6ae-967e-4e4a-83cf-f02ed34e90c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Data">
+      <UniqueIdentifier>{bed5519f-0822-42e1-a62f-0cedd1586766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Data\DAO">
+      <UniqueIdentifier>{3c86759a-f019-4b4c-936a-d06cb6338c2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Services">
+      <UniqueIdentifier>{c52e3d5c-1083-4c8d-ac7d-3f2faf96b6d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppUserManager.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AppUserManager.Core\DataContext.cpp">
+      <Filter>Fichiers sources\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AppUserManager.Core\User.cpp">
+      <Filter>Fichiers sources\Data\DAO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AppUserManager.Core\AbstractService.cpp">
+      <Filter>Fichiers sources\Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AppUserManager.Core\ServiceUser.cpp">
+      <Filter>Fichiers sources\Services</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AppUserManager.Core\AbstractService.h">
+      <Filter>Fichiers d%27en-tête\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AppUserManager.Core\ServiceUser.h">
+      <Filter>Fichiers d%27en-tête\Services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AppUserManager.Core\DataContext.h">
+      <Filter>Fichiers d%27en-tête\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AppUserManager.Core\User.h">
+      <Filter>Fichiers d%27en-tête\Data\DAO</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

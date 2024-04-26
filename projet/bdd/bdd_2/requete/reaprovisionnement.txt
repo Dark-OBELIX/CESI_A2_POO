@@ -1,0 +1,5 @@
+USE main_db;
+
+select id_stock
+From stock 
+where amount < reorderthreshold ; 

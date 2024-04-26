@@ -1,0 +1,5 @@
+USE main_db;
+
+SELECT sum(fullprice) 
+from Ordered 
+where id_customer = 1;

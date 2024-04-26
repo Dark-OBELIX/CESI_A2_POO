@@ -1,0 +1,18 @@
+USe main_db_2;
+
+INSERT INTO Ordered(reference, datedelivery, dateinssuance, datesettlement, settlementbalance, fullprice, id_customer)
+VALUES
+('JEBO2022PAR1', '2022-09-11', '2022-09-01','2022-09-01',0, 66 ,1); 
+
+INSERT INTO Payment(datepayment, meanpayment, amountpayment, id_order)
+VALUES
+('2022-09-01', 'Credit card', 66.0, 1);
+
+INSERT INTO Wholesale_price(itemamount, price_excl_taxes, itemreduc_id   )
+VALUES
+(3, 13, 6);
+
+INSERT INTO panier(quantity, sellprice, vat, id_order, id_item, id_reduc)
+VALUES
+(1, 25, 5, 1, 1, 1),
+(1, 30, 6, 1, 2, 1);

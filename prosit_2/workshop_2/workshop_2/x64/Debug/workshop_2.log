@@ -1,0 +1,6 @@
+﻿  Adar.cpp
+C:\Users\hugol\OneDrive\Documents\CESI_2\POO\prosit_2\workshop_2\workshop_2\Etudiant.h(4,15): error C2011: 'Etudiant' : redéfinition du type 'class'
+C:\Users\hugol\OneDrive\Documents\CESI_2\POO\prosit_2\workshop_2\workshop_2\Etudiant.h(4): message : voir la déclaration de 'Etudiant'
+C:\Users\hugol\OneDrive\Documents\CESI_2\POO\prosit_2\workshop_2\workshop_2\Adar.h(3,30): error C2504: 'Etudiant' : classe de base non définie
+C:\Users\hugol\OneDrive\Documents\CESI_2\POO\prosit_2\workshop_2\workshop_2\Adar.cpp(7,2): error C2065: 'nom' : identificateur non déclaré
+C:\Users\hugol\OneDrive\Documents\CESI_2\POO\prosit_2\workshop_2\workshop_2\Adar.cpp(9,2): error C2065: 'moyenne' : identificateur non déclaré

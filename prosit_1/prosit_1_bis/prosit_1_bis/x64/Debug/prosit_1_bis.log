@@ -1,0 +1,7 @@
+﻿  Point.cpp
+C:\Users\hugol\OneDrive\Desktop\prosit_1_bis\prosit_1_bis\Point.cpp(6,27): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+C:\Users\hugol\OneDrive\Desktop\prosit_1_bis\prosit_1_bis\Point.cpp(6,44): warning C4244: 'argument' : conversion de 'double' en 'int', perte possible de données
+C:\Users\hugol\OneDrive\Desktop\prosit_1_bis\prosit_1_bis\Point.cpp(6,16): warning C4244: 'return' : conversion de 'double' en 'float', perte possible de données
+  prosit_1_bis.cpp
+  Génération de code en cours...
+  prosit_1_bis.vcxproj -> C:\Users\hugol\OneDrive\Desktop\prosit_1_bis\x64\Debug\prosit_1_bis.exe

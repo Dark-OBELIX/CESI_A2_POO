@@ -1,0 +1,9 @@
+﻿  A.cpp
+  B.cpp
+  C.cpp
+  ei2.cpp
+C:\Users\hugol\OneDrive\Desktop\ei2\ei2\ei2.cpp(15,5): error C2065: 'test' : identificateur non déclaré
+C:\Users\hugol\OneDrive\Desktop\ei2\ei2\ei2.cpp(15,10): error C2146: erreur de syntaxe : absence de ';' avant l'identificateur 'A'
+C:\Users\hugol\OneDrive\Desktop\ei2\ei2\ei2.cpp(15,12): error C2059: erreur de syntaxe : '<parameter-list>'
+C:\Users\hugol\OneDrive\Desktop\ei2\ei2\ei2.cpp(16,6): error C2059: erreur de syntaxe : '.'
+  Génération de code en cours...

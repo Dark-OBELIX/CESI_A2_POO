@@ -1,0 +1,1 @@
+SELECT AVG(fullprice) FROM Ordered;

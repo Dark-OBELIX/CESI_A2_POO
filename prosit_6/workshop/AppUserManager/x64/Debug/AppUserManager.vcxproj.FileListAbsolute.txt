@@ -1,0 +1,2 @@
+C:\Users\openspot\Source\repos\AppUserManager\AppUserManager\x64\Debug\AppUserManager.vcxproj.AssemblyReference.cache
+C:\Users\openspot\Source\repos\AppUserManager\AppUserManager\x64\Debug\AppUserManager.vcxproj.SuggestedBindingRedirects.cache

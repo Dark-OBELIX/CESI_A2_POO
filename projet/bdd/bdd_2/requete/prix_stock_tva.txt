@@ -1,0 +1,60 @@
+USE main_db;
+
+DECLARE @VAR_ID INT;
+DECLARE @VAR_1 INT;
+DECLARE @VAR_2 INT;
+
+Set @VAR_ID = 1;
+
+SELECT @VAR_1 = amount
+from Stock
+where id_stock = @VAR_ID ;
+
+SELECT  @VAR_2 = vat + price_excl_taxes
+from Item
+where id_stock =  @VAR_ID ;
+
+Select @VAR_1 * @VAR_2;
+/////////////////////////////////////////////////////////////////////////////////////////
+
+return dataContext.Query_return("DECLARE @VAR_ID INT; DECLARE @VAR_1 INT; DECLARE @VAR_2 INT; Set @VAR_ID = 1; SELECT @VAR_1 = amount FROM [Stock] WHERE id_stock = @VAR_ID; SELECT @VAR_2 =  price_excl_taxes + VAT FROM [Item] WHERE id_stock = @VAR_ID;Select @VAR_1 * @VAR_2; ");
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+USE main_db;
+
+DECLARE @VAR_1       INT;
+DECLARE @VAR_2       INT;
+DECLARE @VAR_somme   INT;
+DECLARE @i           INT;
+
+SET @VAR_1           = 0;
+SET @VAR_2           = 0;
+SET @VAR_somme       = 0;
+SET @i               = 0;
+
+WHILE @i < 8
+BEGIN
+	SELECT @VAR_1 = amount
+	from Stock where id_stock = @i;
+
+	SELECT  @VAR_2 = vat + price_excl_taxes
+	from Item where id_stock = @i;
+
+	SET @i = @i +1;
+	SET @VAR_somme = @VAR_somme + @VAR_1 * @VAR_2;
+END;
+
+SELECT @VAR_somme;
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+USE main_db;
+
+DECLARE @VAR_1 INT; DECLARE @VAR_2 INT; DECLARE @VAR_somme INT; DECLARE @i INT; SET @VAR_1 = 0;SET @VAR_2 = 0;SET @VAR_somme = 0;SET @i = 0;WHILE @i < 8 ; BEGINSELECT @VAR_1 = amount from Stock where id_stock = @i; SELECT  @VAR_2 = vat + price_excl_taxesfrom Item where id_stock = @i; SET @i = @i +1; SET @VAR_somme = @VAR_somme + @VAR_1 * @VAR_2; END;SELECT @VAR_somme;
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
+//La bonne requête
+SELECT sum((vat + price_excl_taxes)* S.amount)
+	from Item I INNER JOIN Stock S on I.id_stock = S.id_stock

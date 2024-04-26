@@ -1,0 +1,2 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(83,3): warning : The NuGetSdkResolver did not resolve this SDK because there was no version specified in the project or global.json.
+C:\Program Files\Microsoft Visual Studio\2022\Enterprise\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(83,11): error MSB4236: Le SDK 'Microsoft.NET.Sdk' spécifié est introuvable.

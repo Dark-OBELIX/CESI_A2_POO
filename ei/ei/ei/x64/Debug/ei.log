@@ -1,0 +1,13 @@
+﻿  Cla.cpp
+C:\Users\hugol\OneDrive\Desktop\ei\ei\Cla.cpp(3,1): error C2653: 'CLa' : n'est pas un nom de classe ni d'espace de noms
+C:\Users\hugol\OneDrive\Desktop\ei\ei\Cla.cpp(3,11): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\hugol\OneDrive\Desktop\ei\ei\Cla.cpp(5,1): error C2653: 'CLa' : n'est pas un nom de classe ni d'espace de noms
+C:\Users\hugol\OneDrive\Desktop\ei\ei\Cla.cpp(5,28): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\hugol\OneDrive\Desktop\ei\ei\Cla.cpp(8,1): warning C4508: 'CLa' : la fonction doit retourner une valeur ; type de retour 'void' pris par défaut
+  ei.cpp
+C:\Users\hugol\OneDrive\Desktop\ei\ei\ei.cpp(9,5): error C3861: 'CLa' : identificateur introuvable
+C:\Users\hugol\OneDrive\Desktop\ei\ei\ei.cpp(9,19): error C2065: 'test' : identificateur non déclaré
+C:\Users\hugol\OneDrive\Desktop\ei\ei\ei.cpp(10,5): error C2065: 'test' : identificateur non déclaré
+C:\Users\hugol\OneDrive\Desktop\ei\ei\ei.cpp(11,12): error C2065: 'test' : identificateur non déclaré
+C:\Users\hugol\OneDrive\Desktop\ei\ei\ei.cpp(11,16): error C2541: 'delete' : impossible de détruire des objets qui ne sont pas des pointeurs
+  Génération de code en cours...

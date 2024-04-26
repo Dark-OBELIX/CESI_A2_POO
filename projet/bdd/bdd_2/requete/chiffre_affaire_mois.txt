@@ -1,0 +1,5 @@
+USE main_db;
+
+SELECT SUM(fullprice)
+FROM Ordered 
+where month(datesettlement) = 09 ; -- mettre ici le mois dont on veux le chifffre d'affaire

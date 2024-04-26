@@ -1,0 +1,4 @@
+SELECT TOP 10 id_item
+FROM Hold
+GROUP BY id_item
+ORDER BY COUNT(id_item) 

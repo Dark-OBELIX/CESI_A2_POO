@@ -1,0 +1,4 @@
+C:\Users\hugol\OneDrive\Documents\CESI_2\POO\prosit_5\Project2\Project2\x64\Debug\Project2.vcxproj.AssemblyReference.cache
+C:\Users\hugol\OneDrive\Documents\CESI_2\POO\prosit_5\Project2\Project2\x64\Debug\Project2.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\hugol\OneDrive\Documents\CESI_2\POO\prosit_5\Project2\Project2\x64\Debug\Project2.MyForm.resources
+C:\Users\hugol\OneDrive\Documents\CESI_2\POO\prosit_5\Project2\Project2\x64\Debug\Project2.vcxproj.GenerateResource.cache

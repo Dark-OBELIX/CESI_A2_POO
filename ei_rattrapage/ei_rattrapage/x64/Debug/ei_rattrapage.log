@@ -1,0 +1,8 @@
+﻿  Chien.cpp
+C:\Users\hugol\OneDrive\Desktop\ei_rattrapage\ei_rattrapage\Chien.cpp(19,74): error C2110: '+' : impossible d'ajouter deux pointeurs
+  dalmatien.cpp
+C:\Users\hugol\OneDrive\Desktop\ei_rattrapage\ei_rattrapage\dalmatien.cpp(22,78): error C2110: '+' : impossible d'ajouter deux pointeurs
+  doberman.cpp
+C:\Users\hugol\OneDrive\Desktop\ei_rattrapage\ei_rattrapage\doberman.cpp(22,77): error C2110: '+' : impossible d'ajouter deux pointeurs
+  ei_rattrapage.cpp
+  Génération de code en cours...

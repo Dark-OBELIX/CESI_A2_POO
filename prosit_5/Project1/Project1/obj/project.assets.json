@@ -1,0 +1,45 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\hugol\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\hugol\\OneDrive\\Documents\\CESI_2\\POO\\prosit_5\\Project1\\Project1\\Project1.vcxproj",
+      "projectName": "Project1",
+      "projectPath": "C:\\Users\\hugol\\OneDrive\\Documents\\CESI_2\\POO\\prosit_5\\Project1\\Project1\\Project1.vcxproj",
+      "packagesPath": "C:\\Users\\hugol\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hugol\\OneDrive\\Documents\\CESI_2\\POO\\prosit_5\\Project1\\Project1\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\hugol\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net40": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net40": {
+        "targetAlias": "net6.0",
+        "secondaryFramework": "native"
+      }
+    }
+  }
+}
